@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" sizes="32x32" href="img/favicon2.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500&display=swap">
-	<link rel="stylesheet" type="text/css" href="css\style.production2.css">
+	<link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
 			</nav>
 	</header>
 
-		<main class="main__contact">
+		<main class="contact__main">
 			<h1>Contact</h1>
 			<div>
 				Stanislav Margaritov Nikov<br>
@@ -46,30 +46,42 @@
 				<a href="mailto:stanislavmnikov@gmail.com?cc=thekingofburden@gmail.com&subject=Project%20Portfolio&body=This%20message%20was%20sent%20by%20someone%20who%20wanted%20to%20contact%20you!">Contact me</a> 
 				<p>or leave a message bellow</p>
 
-				<form action="" method="post" id="contact-form">
+				<form method="post" id="contact-form">
 					<label class="standard-label" for="contact-email">*E-mail:</label>
 					<input type="email" required="required" id="contact-email">	
 
 					<label class="standard-label" for="contact-tel">Telephone:</label>
 					<input type="tel" id="contact-tel">
 
-					<label class="standard-label" required="required" for="contact-message">*Message:</label>
-					<textarea maxlength="240" id="contact-message"></textarea>
-
+					<label class="standard-label" for="contact-message">*Message:</label>
+					<textarea maxlength="240" required="required" id="contact-message"></textarea>
 					<input type="submit" value="Send message">
 				</form>
+
+				<div class="grid-buttons" >
+					<form style="display: grid" action="donate.html" method="get">
+						<button type="submit" class="grid-buttons__item grid-buttons-contact">Please, support ME & MY WORK!</button>
+					</form>
+					<form style="display: grid" action="art.html" method="get">
+						<button type="submit" class="grid-buttons__item grid-buttons-contact">Support MY FRIENDS, too!</button>
+					</form>
+				</div>
 		</main>
+
+				<div class="back-n-forth-contact">
+                    <a href="about.html" id="contact-back">&laquo; Back</a>
+                    <a href="work.html" id="contact-next">Next &raquo;</a>
+                </div>
 		
 	<footer class="page-footer">
-		<p id="footer-paragraph">Find me on:</p>
-			<div class="social-media">
-			<a href="https://facebook.com/eyedealist" role="xlink" target="_blank"><img src="img/facebook.svg" alt="facebook"></a> 
-			<a href="https://github.com/StanislavNikov" role="xlink" target="_blank"><img src="img/github.svg" alt="github"></a>
+		<p>Find me on:</p>
+		<div class="social-media">
+			<a href="https://facebook.com/eyedealist" target="_blank"><img src="img/facebook.svg" alt="facebook"></a> 
+			<a href="https://github.com/StanislavNikov" target="_blank"><img src="img/github.svg" alt="github"></a>
 			<a href="https://www.linkedin.com/in/stanislav-nikov-thekingofburden/" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a>
-			<!--spaces between the tags causes black lines between the icons-->
 		</div>
 	</footer>
-					
+			
 <script src="js/tota11y.min.js"></script>
 </body>
 
